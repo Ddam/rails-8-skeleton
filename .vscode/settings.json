@@ -15,8 +15,8 @@
   "editor.formatOnSave": true,
   "editor.formatOnPaste": false,
   "editor.codeActionsOnSave": {
-    "source.organizeImports": "explicit",
-    "source.fixAll": "explicit"
+    "source.fixAll.eslint": "explicit",
+    "source.organizeImports": "explicit"
   },
   "explorer.confirmDelete": false,
   "explorer.confirmDragAndDrop": false,
@@ -73,6 +73,8 @@
     "*.html.erb": "erb",
     "*.js.erb": "erb",
     "*.rb": "ruby",
+    "*.ts": "typescript",
+    "*.tsx": "typescript",
   },
   "[ruby]": {
     "editor.defaultFormatter": "Shopify.ruby-lsp", // Use the Ruby LSP as the default formatter
@@ -85,6 +87,10 @@
   "[erb]": {
     "editor.defaultFormatter": "aliariff.vscode-erb-beautify",
     "editor.formatOnSave": true
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true,
   },
   // ========== Extension configs ==========
   // Ruby LSP config:

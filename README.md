@@ -11,7 +11,9 @@ This project provides configurations for Visual Studio Code, including devcontai
 - **Devcontainer Configuration**: Easily set up and run the project in a Docker container.
 - **VS Code Extensions**: Pre-configured extensions for a seamless development experience.
 - **Linters**: Includes basic linters such as ESLint, ERB-Lint, Standard, and RuboCop for Ruby and Rails.
+- **Typescript support**: Provides support for TypeScript, enabling static type checking and modern JavaScript features.
 - **Testing Library**: Utilizes RSpec for testing.
+- **Vite**: Replace asset pipeline and JSBundling / Importmap by Vite
 
 ## Getting Started
 
@@ -59,10 +61,11 @@ This project provides configurations for Visual Studio Code, including devcontai
 
 These extensions are pre-configured to provide a smooth and efficient development experience with Rails 8.
 
-## Linters
+## Linters / Formatting
 
 - **ESLint**: For JavaScript linting.
 - **ERB-Lint**: For linting ERB templates.
+- **Prettier**: For Javascript and Typescript formatting.
 - **Standard** & **RuboCop**: For Ruby and Rails linting.
 
 ## Testing
