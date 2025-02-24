@@ -23,5 +23,11 @@ module Rails8Skeleton
     #
     # config.time_zone = "Central Time (US & Canada)"
     # config.eager_load_paths << Rails.root.join("extras")
+
+    # Permitted locales available for the application
+    I18n.available_locales = [ :fr, :en ]
+
+    # Set default locale to something other than :en
+    I18n.default_locale = :fr
   end
 end
