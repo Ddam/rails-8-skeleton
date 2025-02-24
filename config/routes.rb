@@ -14,5 +14,21 @@ Rails.application.routes.draw do
   root "dashboard#index"
 
   scope "(:locale)", locale: /#{I18n.available_locales.join("|")}/ do
+    devise_for :users,
+      path: "auth",
+      controllers: {
+        registrations: "users/registrations",
+        passwords: "users/passwords",
+        sessions: "users/sessions"
+      },
+      path_names: {
+        sign_in: "login",
+        sign_out: "logout",
+        password: "secret",
+        confirmation: "verification",
+        unlock: "unblock",
+        registration: "register",
+        sign_up: ""
+      }
   end
 end
