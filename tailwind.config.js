@@ -8,6 +8,7 @@ export default {
     "./app/frontend/**/*.tsx",
     "./app/views/**/*.{erb,haml,html,slim}",
     "./node_modules/flowbite/**/*.js",
+    "./lib/theme.rb",
   ],
 
   theme: {
